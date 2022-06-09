@@ -19,9 +19,6 @@ def yes_no(question):
 
             print("please enter either yes or no...\n")
 
-for item in range(0,6):
-        want_help = yes_no("Do want to read the instructions? ")
-
 # checks that imput is either a float or an
 # integer that is more than zero. takes in custom error message 
 def num_check(question, error, num_type):
@@ -36,7 +33,12 @@ def num_check(question, error, num_type):
                     print(error)
             else:
                 return response
-                Expect_Error
+
 
         except ValueError:
             print(error)
+          
+
+for item in range(0,6):
+  want_help = yes_no("Do want to read the instructions? ")
+  print(want_help)
