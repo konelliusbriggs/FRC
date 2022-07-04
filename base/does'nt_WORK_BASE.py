@@ -38,6 +38,23 @@ def num_check(question, error, num_type):
         except ValueError:
             print(error)
           
+# ask user for interger, check if its valid
+def int_check(question, error):
+
+    valid = False
+    while not valid:
+        
+
+        # ask user for number and check it is valid
+        try:
+            response = int (input(question))
+
+            return response
+
+
+        # if an integer is not entered, display and error
+        except ValueError:
+            print(error)
 
 for item in range(0,6):
   want_help = yes_no("Do want to read the instructions? ")
